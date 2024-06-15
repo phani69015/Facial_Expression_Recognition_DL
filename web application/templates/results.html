@@ -1,0 +1,23 @@
+<!-- results.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model Evaluation Results</title>
+</head>
+<body>
+    <h1>Model Evaluation Results</h1>
+    <h2>Training and Validation Loss</h2>
+    <div>
+        <p><strong>Training Loss:</strong> {{ loss }}</p>
+        <p><strong>Validation Loss:</strong> {{ val_loss }}</p>
+    </div>
+    <h2>Training and Validation Accuracy</h2>
+    <div>
+        <p><strong>Training Accuracy:</strong> {{ accuracy }}</p>
+        <p><strong>Validation Accuracy:</strong> {{ val_accuracy }}</p>
+    </div>
+    <!-- You can add more elements to display predictions or other metrics -->
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Model</title>
+</head>
+<body>
+    <h1>Select Model</h1>
+    <form action="/predict" method="post">
+        <label for="model">Choose a model:</label>
+        <select name="model" id="model">
+            <option value="1">Seq model</option>
+            <option value="2">Optimizers</option>
+            <option value="3">Compare with optimizers</option>
+            <option value="4">ANN_multiclass</option>
+            <option value="5">seq_model with mini batch</option>
+            <option value="6">CNN</option>
+            <option value="7">CNN_regularization</option>
+            <option value="8">VGG</option>
+            <option value="9">RNN</option>
+            <option value="10">CNN+LSTM</option>
+            <option value="11">Resnet 50</option>
+        </select>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
