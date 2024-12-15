@@ -1,85 +1,69 @@
-ENHANCED APPLICATION OF DEEP LEARNING MODELS ON FACIAL EXPRESSION CLASSIFICATION
----------------------------------------------------------------------------------------------------------------------
-User Manual : The basic folders and subfolders format should be as mentioned below
+# Enhanced Application of Deep Learning Models on Facial Expression Classification
 
-DL PROJECT:
-    Facial_ex_dataset
-    Preprocess - Preprocess.py,visualize.py
-    // Creating folders for different models and including pyhton files inside them
-    1. ANN - ANN.py
-    2. ANN_ADAM - ANN_ADAM.py
-    3. ANN_SGD - ANN_SGD.py
-    4. ANN_RMSPROP - ANN_RMSPROP.py
-    5. SEQ_MODEL - seq_model.py
-    6. MINI_Batch - mini_batch.py
-    7. CNN - CNN.py
-    8. CNN_REG - cnn_reg.py
-    9. VGG- vgg.py
-    10. RNN - rnn.py
-    12. LSTM - lstm.py
-    13. Resnet - resnet.py
+## Project Structure
 
-step 1      :  run the preprocess python file and make sure training,testing and validation folders are created
-step 2      :  Go to each model folder and run the models one by one making sure 3 additionals files are being
-               saved inside the model folder
-               namely : model.json,model_weights.h5,model_history.pkl
-step 3      :  Create a subfolder inside DL project folder and name it as TEST MODELS include a test and metrics
-               python file inside it
-step 4      :  Run the test and metrics file , the output will be as shown below:
-                1: Seq moedel
-                2:Optimizers
-                3:Compare with optimizers
-                4:ANN_multiclass
-                5:seq_model with mini batch
-                6:CNN
-                7:CNN_regularization
-                8:VGG
-                9:RNN
-                10:CNN+LSTM
-                11:Resnet 50
-                Select the model to get predictions of testing data and Training history
-
-step 5      : Select the required model to get its prediction results and training metrics as long as you exit from
-              interface
+The folder structure should be organized as follows:
 
 
+## Steps to Run the Project
 
-step 6      : web application integration
-              - templates
-                 - index.html
-                 - results.html
-                 - testing.html
-              - app.py
+### Step 1: Preprocessing
+- Run the `preprocess.py` file located in the `Preprocess/` folder to make sure the `training`, `testing`, and `validation` folders are created.
 
-step 7      : Run the app.py to get a live server containing the integration of the project in web page.
+### Step 2: Running Models
+- Go to each model folder (e.g., `ANN`, `SEQ_MODEL`, etc.) and run the respective model script (e.g., `ANN.py`, `seq_model.py`, etc.) one by one.
+- After running the models, ensure the following three files are saved inside each model folder:
+  - `model.json`
+  - `model_weights.keras` (Note: Use `.keras` instead of `.h5` for compatibility with the latest versions of PyCharm)
+  - `model_history.pkl`
 
+### Step 3: Create Test Models Folder
+- Create a subfolder inside the `DL_PROJECT` folder and name it `TEST_MODELS`.
+- Include the following Python files in this folder:
+  - `test.py`
+  - `metrics.py`
 
-// key instructions
+### Step 4: Running Test and Metrics Files
+- Run the `test.py` and `metrics.py` files.
+- The output will show the following:
+  1. Seq model
+  2. Optimizers
+  3. Comparison of optimizers
+  4. ANN multiclass
+  5. Seq model with mini batch
+  6. CNN
+  7. CNN with regularization
+  8. VGG
+  9. RNN
+  10. CNN + LSTM
+  11. ResNet 50
+  
+  - Select the model to get predictions of the testing data and training history.
 
---> file names are case sensitive as OS is used to load everything without considering locations
---> h5 is depreciated for latest pycharm edition so kindly change it to keras
+### Step 5: Model Selection and Results
+- Select the required model from the interface to view its prediction results and training metrics.
+- Exit the interface once you are done with the selection.
 
-------------------------------------------------------------------------------------------------------------------------
+### Step 6: Web Application Integration
+- Inside the `templates` folder, include the following HTML files:
+  - `index.html`
+  - `results.html`
+  - `testing.html`
 
+- Inside the project folder, create the `app.py` file to integrate the entire project into a web application.
 
+### Step 7: Running the Web Application
+- Run `app.py` to start a live server with the integrated project on a web page.
 
+---
 
+## Key Instructions
 
+- **File Names**: The file names are case-sensitive as the operating system used loads files without considering locations.
+  
+- **Keras Compatibility**: `.h5` is deprecated in the latest versions of PyCharm, so ensure you use `.keras` for saving model weights.
 
+---
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+### Demonstration
 
